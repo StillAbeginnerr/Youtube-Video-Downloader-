@@ -1,0 +1,212 @@
+.container {
+  padding: 0 2rem;
+}
+
+.main {
+  min-height: 100vh;
+  padding: 4rem 0;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.inputBox{
+  position: absolute;
+  top: 16rem;
+  left: 29rem;
+  border-radius: 25px;
+  border: none;
+  height: 40px;
+  width: 580px;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+.submit{
+  position: relative;
+  top: 10.7rem;
+  left: 27rem;
+  border-radius: 25px;
+  border: none;
+  cursor: pointer;
+  height: 30px;
+  color: #eaeaea;
+  background-color: #0070f3;
+  width: 100px;
+}
+.search{
+  position: absolute;
+  left: 43rem;
+  top: 14rem;
+}
+
+.animatecharcter
+{
+  position: relative;
+  bottom: 2rem;
+   text-transform: uppercase;
+  background-image: linear-gradient(
+    -225deg,
+    #000000 0%,
+    #ffffff 29%,
+    #ff0000 67%,
+    #fcfcfc 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 3s linear infinite;
+      font-size: 40px;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 140% center;
+  }
+}
+
+@media screen and (max-width:450px) {
+  .animatecharcter{
+    text-align: center;
+    font-size: 30px;
+  }
+  .inputBox{
+    position: absolute;
+    top: 23rem;
+    left: 1rem;
+    border-radius: 25px;
+    border: none;
+    height: 40px;
+    width: 360px;
+    text-transform: uppercase;
+    font-weight: 400;
+  }
+  .submit{
+    position: absolute;
+    top: 26.7rem;
+    left: 1rem;
+    border-radius: 25px;
+    border: none;
+    cursor: pointer;
+    height: 40px;
+    color: #eaeaea;
+    background-color: #0070f3;
+    width: 120px;
+  }
+  .search{
+  font-size: 34px;
+    position: absolute;
+    left: 9.5rem;
+    top: 13rem;
+  }
+  
+}
+
+.footer {
+  display: flex;
+  flex: 1;
+  padding: 2rem 0;
+  border-top: 1px solid #eaeaea;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.title a {
+  color: #0070f3;
+  text-decoration: none;
+}
+
+.title a:hover,
+.title a:focus,
+.title a:active {
+  text-decoration: underline;
+}
+
+.title {
+  margin: 0;
+  line-height: 1.15;
+  font-size: 4rem;
+}
+
+.title,
+.description {
+  text-align: center;
+}
+
+.description {
+  margin: 4rem 0;
+  line-height: 1.5;
+  font-size: 1.5rem;
+}
+
+.code {
+  background: #fafafa;
+  border-radius: 5px;
+  padding: 0.75rem;
+  font-size: 1.1rem;
+  font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
+    Bitstream Vera Sans Mono, Courier New, monospace;
+}
+
+.grid {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 800px;
+}
+
+.card {
+  margin: 1rem;
+  padding: 1.5rem;
+  text-align: left;
+  color: inherit;
+  text-decoration: none;
+  border: 1px solid #eaeaea;
+  border-radius: 10px;
+  transition: color 0.15s ease, border-color 0.15s ease;
+  max-width: 300px;
+}
+
+.card:hover,
+.card:focus,
+.card:active {
+  color: #0070f3;
+  border-color: #0070f3;
+}
+
+.card h2 {
+  margin: 0 0 1rem 0;
+  font-size: 1.5rem;
+}
+
+.card p {
+  margin: 0;
+  font-size: 1.25rem;
+  line-height: 1.5;
+}
+
+.logo {
+  height: 1em;
+  margin-left: 0.5rem;
+}
+
+@media (max-width: 600px) {
+  .grid {
+    width: 100%;
+    flex-direction: column;
+  }
+}

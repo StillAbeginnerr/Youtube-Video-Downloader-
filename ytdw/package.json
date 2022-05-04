@@ -1,0 +1,26 @@
+{
+  "name": "ytdw",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@next/env": "^12.1.6",
+    "cors": "^2.8.5",
+    "downloadjs": "^1.4.7",
+    "express": "^4.18.1",
+    "next": "12.1.6",
+    "react": "18.1.0",
+    "react-dom": "18.1.0",
+    "styled-jsx": "^5.0.2",
+    "ytdl-core": "^4.11.0"
+  },
+  "devDependencies": {
+    "eslint": "8.14.0",
+    "eslint-config-next": "12.1.6"
+  }
+}
